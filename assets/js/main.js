@@ -12,13 +12,18 @@ createApp({
     data() {
         return {
             emails: [],
-            
+
         }
     },
     methods: {
-        esEmail(){
-            this.emails.push("aa", "bb", "cc", "vv", "dd", "ff", "gh2", "jk")
+        apiEmail() {
+            for (let i = 0; i < 10; i++) {
+                axios.get(`https://flynn.boolean.careers/exercises/api/random/mail`)
+                .then((dati) => {
+                    this.emails.push(dati.data)
+                    console.log(dati.data)
+                })
+            }
         }
     },
 }).mount('#app')
-

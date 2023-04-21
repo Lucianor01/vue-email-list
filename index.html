@@ -11,13 +11,20 @@
 <body>
     <!-- VUE -->
     <div id="app">
-        <div>
-            <div>
+        <!-- CONTAINER -->
+        <div class="container bg-light text-center rounded p-3 align-items-center">
+            <div class="">
+                <!-- TITOLO -->
+                <h1>Generazione Email tramite API di Boolean</h1>
+                <!-- BUTTON -->
+                <button @click="apiEmail()" type="button" class="btn btn-success">Genera Email</button>
+            </div>
+            <!-- LISTA EMAIL -->
+            <div class="d-inline-block">
                 <ul>
                     <li v-for="(element, index) in emails" :key="index">{{ element }}</li>
                 </ul>
             </div>
-            <button @click="esEmail()">Genera email</button>
         </div>
     </div>
 
