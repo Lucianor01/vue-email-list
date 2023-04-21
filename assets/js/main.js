@@ -25,7 +25,7 @@ createApp({
                     console.log(dati.data.response)
                     if (this.emails.length == 10) {
                         this.check = true;
-                }
+                    }
                 })
             }
         }

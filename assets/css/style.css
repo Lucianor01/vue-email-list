@@ -4,5 +4,14 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: lightslategrey;
+    background-color: rgb(210, 213, 218);
+}
+
+.container{
+    min-height: 625px;
+}
+
+hr{
+    height: 5px;
+    color: rgb(210, 213, 218);
 }
