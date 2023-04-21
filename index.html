@@ -11,7 +11,14 @@
 <body>
     <!-- VUE -->
     <div id="app">
-
+        <div>
+            <div>
+                <ul>
+                    <li v-for="(element, index) in emails" :key="index">{{ element }}</li>
+                </ul>
+            </div>
+            <button @click="esEmail()">Genera email</button>
+        </div>
     </div>
 
     <!--! SCRIPT -->
