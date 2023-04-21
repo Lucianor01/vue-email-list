@@ -12,6 +12,7 @@ createApp({
     data() {
         return {
             emails: [],
+            check: false,
 
         }
     },
@@ -22,6 +23,9 @@ createApp({
                 .then((dati) => {
                     this.emails.push(dati.data.response)
                     console.log(dati.data.response)
+                    if (this.emails.length == 10) {
+                        this.check = true;
+                }
                 })
             }
         }

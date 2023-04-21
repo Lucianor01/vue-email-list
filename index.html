@@ -22,7 +22,9 @@
             <!-- LISTA EMAIL -->
             <div class="d-inline-block">
                 <ul>
-                    <li v-for="(element, index) in emails" :key="index">{{ element }}</li>
+                    <li v-for="(element, index) in emails"  v-if="check"
+                    :key="index" 
+                    class="text-start">{{ element }}</li>
                 </ul>
             </div>
         </div>
